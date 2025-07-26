@@ -8,4 +8,4 @@ export declare interface ISubscriptionPlan {
     price: number; // in USD
 }
 
-export type NewSubscriptionPlan = Omit<ISubscriptionPlan, "id">;
+export type NewSubscriptionPlan = Partial<Omit<ISubscriptionPlan, "id">>;
